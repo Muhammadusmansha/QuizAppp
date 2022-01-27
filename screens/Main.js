@@ -41,7 +41,7 @@ const MainScreen = ({ navigation }) => {
             marginLeft: 65
           }}
         >
-          Quiz App
+          Quiz Appp
         </Text>
 
         <TouchableOpacity>
