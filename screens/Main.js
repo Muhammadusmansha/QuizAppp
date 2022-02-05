@@ -7,9 +7,18 @@ const MainScreen = ({ navigation }) => {
     <View
       style={{
         flex: 1,
-        backgroundColor: "#262b41"
+        
       }}
     >
+      <Image
+            style={{
+                width:"100%",
+                height:"100%",
+                position:"absolute"
+                
+            }}
+            source={require('../src/Img20.png')}
+            />
       <View
         style={{
           flexDirection: "row",
@@ -17,16 +26,16 @@ const MainScreen = ({ navigation }) => {
           height: "18%",
           borderBottomEndRadius: 50,
           borderBottomStartRadius: 50,
-          backgroundColor: "#2d435b",
+          backgroundColor: "white",
         }}
       >
         <TouchableOpacity>
           <Image
             style={{
-              width: 30,
-              height: 30,
+              width: 60,
+              height: 60,
               marginLeft: 20,
-              marginTop: 50
+              marginTop: 40
             }}
             source={require('../src/Im1.png')}
           />
@@ -38,10 +47,11 @@ const MainScreen = ({ navigation }) => {
             fontSize: 30,
             fontWeight: "500",
             marginTop: 45,
-            marginLeft: 65
+            marginLeft: 35,
+            color:"#e9097e"
           }}
         >
-          Quiz Appp
+          Quiz Vista
         </Text>
 
         <TouchableOpacity>
@@ -49,7 +59,7 @@ const MainScreen = ({ navigation }) => {
             style={{
               width: 50,
               height: 50,
-              marginLeft: 50,
+              marginLeft: 40,
               marginTop: 45
             }}
             source={require('../src/Im2.png')}
@@ -60,7 +70,7 @@ const MainScreen = ({ navigation }) => {
       <View
         style={{
           flexDirection: "row",
-          backgroundColor: "#e78230",
+          backgroundColor: "white",
           width: "90%",
           height: "10%",
           marginTop: 40,
@@ -72,16 +82,22 @@ const MainScreen = ({ navigation }) => {
           style={{
             marginLeft: 30,
             justifyContent: "center",
-            alignItems: "center"
+            alignItems: "center",
+            color:"#e9097e"
           }}
         >
-          <Text>
+          <Text
+          style={{
+            color:"#e9097e"
+          }}
+          >
             Correct Answer
           </Text>
           <Text
             style={{
               fontSize: 23,
-              fontWeight: "500"
+              fontWeight: "500",
+              color:"#e9097e"
             }}
           >
             230
@@ -89,27 +105,33 @@ const MainScreen = ({ navigation }) => {
         </View>
         <Image
           style={{
-            height: 80,
-            width: 3,
+            height: 65,
+            width: 6,
             justifyContent: "center",
-            marginLeft: 40
+            marginLeft: 30
           }}
           source={require('../src/Im4.png')}
         />
         <View
           style={{
-            marginLeft: 30,
+            marginLeft: 40,
             justifyContent: "center",
-            alignItems: "center"
+            alignItems: "center",
+            color:"#e9097e"
           }}
         >
-          <Text>
+          <Text
+          style={{
+            color:"#e9097e"
+          }}
+          >
             Your Score
           </Text>
           <Text
             style={{
               fontSize: 23,
-              fontWeight: "500"
+              fontWeight: "500",
+              color:"#e9097e"
             }}
           >
             1250
@@ -117,10 +139,11 @@ const MainScreen = ({ navigation }) => {
         </View>
 
       </View>
-      <View
+      <TouchableOpacity
+      onPress={() => navigation.navigate('Level')}
         style={{
           flexDirection: "row",
-          backgroundColor: "#2d435b",
+          backgroundColor: "white",
           width: "90%",
           height: "11%",
           marginTop: 15,
@@ -142,16 +165,17 @@ const MainScreen = ({ navigation }) => {
             fontSize: 22,
             fontWeight: "500",
             marginTop: 16,
-            marginLeft: 20
+            marginLeft: 20,
+            color:"#e9097e"
           }}
         >
-          Art And Literature
+          Graphics Designing
         </Text>
-      </View>
+      </TouchableOpacity>
       <View
         style={{
           flexDirection: "row",
-          backgroundColor: "#2d435b",
+          backgroundColor: "white",
           width: "90%",
           height: "11%",
           marginTop: 12,
@@ -173,17 +197,18 @@ const MainScreen = ({ navigation }) => {
             fontSize: 22,
             fontWeight: "500",
             marginTop: 16,
-            marginLeft: 20
+            marginLeft: 20,
+            color:"#e9097e"
           }}
         >
-          General Knowledge
+          Web Development
         </Text>
       </View>
       <TouchableOpacity
-        onPress={() => navigation.navigate('Result')}
+        onPress={() => navigation.navigate('Snques')}
         style={{
           flexDirection: "row",
-          backgroundColor: "#2d435b",
+          backgroundColor: "white",
           width: "90%",
           height: "11%",
           marginTop: 12,
@@ -205,16 +230,17 @@ const MainScreen = ({ navigation }) => {
             fontSize: 22,
             fontWeight: "500",
             marginTop: 16,
-            marginLeft: 20
+            marginLeft: 20,
+            color:"#e9097e"
           }}
         >
-          Science & Nature
+          Android Development
         </Text>
       </TouchableOpacity>
       <View
         style={{
           flexDirection: "row",
-          backgroundColor: "#2d435b",
+          backgroundColor: "white",
           width: "90%",
           height: "11%",
           marginTop: 12,
@@ -237,18 +263,20 @@ const MainScreen = ({ navigation }) => {
             fontWeight: "500",
             marginTop: 16,
             marginLeft: 20,
+            color:"#e9097e"
 
           }}
         >
-          Technology
+          Digital Marketing
         </Text>
 
 
       </View>
       <TouchableOpacity
+      onPress={() => navigation.navigate('Result')}
         style={{
           flexDirection: "row",
-          backgroundColor: "#cadae7",
+          backgroundColor: "white",
           width: "90%",
           height: "9%",
           marginTop: 15,
@@ -262,7 +290,7 @@ const MainScreen = ({ navigation }) => {
             fontWeight: "500",
             marginTop: 16,
             marginLeft: 110,
-            color: "black",
+            color: "#e9097e",
 
           }}
         >

@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text, Image, TouchableOpacity } from "react-native";
 
 
-const ResultScreen =() =>{
+const ResultScreen =({navigation}) =>{
   return(
     <View
     style={{
@@ -10,6 +10,19 @@ const ResultScreen =() =>{
       backgroundColor:"#262b41"
     }}
     >
+      <Image
+      
+            style={{
+                width:"100%",
+                height:"100%",
+                position:"absolute"
+                
+            }}
+            source={require('../src/Img20.png')}
+            />
+            <TouchableOpacity
+            onPress={() => navigation.navigate('Level')}
+            >
       <Image 
       style={{
         width:20,
@@ -19,11 +32,12 @@ const ResultScreen =() =>{
       }}
       source={require('../src/Im8.png')}
       />
+      </TouchableOpacity>
 <View
 style={{
   width:"85%",
   height:"60%",
-  backgroundColor:"#cbdce6",
+  backgroundColor:"white",
   marginLeft:28,
   marginTop:100,
   borderRadius:20
